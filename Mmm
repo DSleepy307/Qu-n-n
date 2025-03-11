@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập Diễn Đàn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Đăng Nhập Diễn Đàn</h2>
+        <form>
+            <div class="input-group">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="input-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="button-group">
+                <button type="submit">Đăng Nhập</button>
+                <button type="reset">Phục hồi</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0073e6;
+    text-align: center;
+}
+
+.login-container {
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+}
+
+.input-group input {
+    flex: 2;
+    padding: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
